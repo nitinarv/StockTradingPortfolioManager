@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:sfw="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/card_bg">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.4"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/large_text"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:textColor="@android:color/white"
+            tools:text="GOOG"
+            android:id="@+id/ticker" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/xsmall_text"
+            tools:text="Google Inc"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/name" />
+
+        <app.stockticker.com.stockticker.ui.StockFieldView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            sfw:name="Daily Volume"
+            sfw:size="@dimen/xsmall_text"
+            sfw:or="vertical"
+            android:id="@+id/averageDailyVolume" />
+
+        <app.stockticker.com.stockticker.ui.StockFieldView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            sfw:name="Exchange"
+            sfw:size="@dimen/xsmall_text"
+            sfw:or="vertical"
+            android:id="@+id/exchange" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="0.6"
+        android:layout_height="wrap_content">
+
+        <app.stockticker.com.stockticker.ui.StockFieldView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            sfw:name="Price"
+            sfw:size="@dimen/large_text"
+            android:id="@+id/totalValue" />
+
+        <app.stockticker.com.stockticker.ui.StockFieldView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            sfw:name="Change %"
+            sfw:size="@dimen/xsmall_text"
+            android:id="@+id/changePercent" />
+
+        <app.stockticker.com.stockticker.ui.StockFieldView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            sfw:name="Change"
+            sfw:size="@dimen/xsmall_text"
+            android:id="@+id/changeValue" />
+
+
+        <app.stockticker.com.stockticker.ui.StockFieldView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            sfw:name="Year High"
+            sfw:size="@dimen/xsmall_text"
+            android:id="@+id/yearHigh" />
+
+        <app.stockticker.com.stockticker.ui.StockFieldView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            sfw:name="Year Low"
+            sfw:size="@dimen/xsmall_text"
+            android:id="@+id/yearLow" />
+
+    </LinearLayout>
+
+</LinearLayout>

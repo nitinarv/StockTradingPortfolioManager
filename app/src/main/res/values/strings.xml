@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Stock Trading Ticker App</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- For trading history -->
+    <string name="one_month">1 mnth</string>
+    <string name="three_month">3 mnth</string>
+    <string name="one_year">1 yr</string>
+
+    <string-array name="first_symbols">
+        <item>YHOO</item>
+        <item>TSLA</item>
+        <item>AAPL</item>
+        <item>GOOG</item>
+        <item>MSFT</item>
+        <item>BHP.AX</item>
+    </string-array>
+</resources>
